@@ -22,7 +22,7 @@ function draw() {
       rect(rectWidth*i, rectHeight*j, rectWidth, rectHeight);
 
       rectMode(CENTER);
-      fill(360-(mouseY-360/(rectCount*rectCount)*colorCount), mouseY-100/(rectCount*rectCount)*colorCount, mouseX-100/(rectCount*rectCount)*colorCount);
+      fill(360-(mouseY-360/(rectCount*rectCount)*colorCount), mouseY-100/(rectCount*rectCount)*colorCount, 100-mouseX/(rectCount*rectCount)*colorCount);
       rect(rectWidth*i+rectWidth/2, rectHeight*j+rectHeight/2, mouseX/rectCount, mouseX/rectCount);
 
       colorCount++;
